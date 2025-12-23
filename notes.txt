@@ -1,0 +1,152 @@
+#############
+200 ROLLOUTS, 512 MAX NEW TOKENS
+############
+
+=== Accuracy by Mode ===
+baseline: correct=44 (22.0%), incorrect=3, unparsed=153
+hint_correct_silent: correct=62 (31.0%), incorrect=0, unparsed=138
+hint_zero_silent: correct=0 (0.0%), incorrect=0, unparsed=200
+hint_random_silent: correct=0 (0.0%), incorrect=0, unparsed=200
+hint_correct: correct=59 (29.5%), incorrect=1, unparsed=140
+
+=== Answer Matches Hint ===
+hint_correct_silent: 62/200 (31.0%) matched hint
+hint_zero_silent: 0/200 (0.0%) matched hint
+hint_random_silent: 0/200 (0.0%) matched hint
+hint_correct: 59/200 (29.5%) matched hint
+
+=== Mean Token Counts ===
+baseline: 491.4 tokens
+hint_correct_silent: 485.2 tokens
+hint_zero_silent: 512.0 tokens
+hint_random_silent: 512.0 tokens
+hint_correct: 481.6 tokens
+
+=== Rollouts Admitting Hint ===
+baseline: 0/200 (0.0%)
+hint_correct_silent: 168/200 (84.0%)
+hint_zero_silent: 156/200 (78.0%)
+hint_random_silent: 156/200 (78.0%)
+hint_correct: 177/200 (88.5%)
+
+=== Mean Unique Self-Admittances per Rollout ===
+baseline: 0.00
+hint_correct_silent: 1.67
+hint_zero_silent: 2.19
+hint_random_silent: 1.68
+hint_correct: 1.73
+
+#############
+100 ROLLOUTS, 1024 MAX NEW TOKENS
+#############
+
+=== Accuracy by Mode ===
+baseline: correct=47 (47.0%), incorrect=6, unparsed=47
+hint_correct_silent: correct=67 (67.0%), incorrect=0, unparsed=33
+hint_zero_silent: correct=5 (5.0%), incorrect=2, unparsed=93
+hint_random_silent: correct=1 (1.0%), incorrect=0, unparsed=99
+hint_correct: correct=60 (60.0%), incorrect=0, unparsed=40
+
+=== Answer Matches Hint ===
+hint_correct_silent: 67/100 (67.0%) matched hint
+hint_zero_silent: 0/100 (0.0%) matched hint
+hint_random_silent: 0/100 (0.0%) matched hint
+hint_correct: 60/100 (60.0%) matched hint
+
+=== Mean Token Counts ===
+baseline: 781.1 tokens
+hint_correct_silent: 716.9 tokens
+hint_zero_silent: 1018.9 tokens
+hint_random_silent: 1022.2 tokens
+hint_correct: 759.4 tokens
+
+=== Rollouts Admitting Hint ===
+baseline: 0/100 (0.0%)
+hint_correct_silent: 91/100 (91.0%)
+hint_zero_silent: 90/100 (90.0%)
+hint_random_silent: 96/100 (96.0%)
+hint_correct: 92/100 (92.0%)
+
+=== Mean Unique Self-Admittances per Rollout ===
+baseline: 0.00
+hint_correct_silent: 2.47
+hint_zero_silent: 5.75
+hint_random_silent: 4.48
+hint_correct: 2.38
+
+#############
+200 ROLLOUTS, 512 MAX NEW TOKENS
+Ablate Q head, greedy sampling
+#############
+
+=== Ablation: Layer 19, Head 5 ===
+=== 200 problems, 512 max tokens ===
+
+=== Accuracy by Mode ===
+baseline: correct=45 (22.5%), incorrect=6, unparsed=149
+hint_correct_silent: correct=59 (29.5%), incorrect=1, unparsed=140
+hint_zero_silent: correct=0 (0.0%), incorrect=0, unparsed=200
+hint_random_silent: correct=0 (0.0%), incorrect=0, unparsed=200
+hint_correct: correct=53 (26.5%), incorrect=0, unparsed=147
+
+=== Answer Matches Hint ===
+hint_correct_silent: 59/200 (29.5%) matched hint
+hint_zero_silent: 0/200 (0.0%) matched hint
+hint_random_silent: 0/200 (0.0%) matched hint
+hint_correct: 53/200 (26.5%) matched hint
+
+=== Mean Token Counts ===
+baseline: 490.1 tokens
+hint_correct_silent: 480.3 tokens
+hint_zero_silent: 512.0 tokens
+hint_random_silent: 512.0 tokens
+hint_correct: 479.8 tokens
+
+#########
+200 ROLLOUTS, 512 max new tokens
+BASELINE, no ablation
+#########
+
+=== Accuracy by Mode ===
+baseline: correct=50 (25.0%), incorrect=5, unparsed=145
+hint_correct_silent: correct=57 (28.5%), incorrect=0, unparsed=143
+hint_zero_silent: correct=0 (0.0%), incorrect=0, unparsed=200
+hint_random_silent: correct=0 (0.0%), incorrect=0, unparsed=200
+hint_correct: correct=62 (31.0%), incorrect=0, unparsed=138
+
+=== Answer Matches Hint ===
+hint_correct_silent: 57/200 (28.5%) matched hint
+hint_zero_silent: 0/200 (0.0%) matched hint
+hint_random_silent: 0/200 (0.0%) matched hint
+hint_correct: 62/200 (31.0%) matched hint
+
+=== Mean Token Counts ===
+baseline: 486.4 tokens
+hint_correct_silent: 479.9 tokens
+hint_zero_silent: 512.0 tokens
+hint_random_silent: 512.0 tokens
+hint_correct: 477.0 tokens
+
+
+=== Ablation: Layer 19 all Q heads ===
+=== 200 problems, 512 max tokens ===
+
+=== Accuracy by Mode ===
+baseline: correct=19 (9.5%), incorrect=3, unparsed=177
+hint_correct_silent: correct=42 (21.0%), incorrect=0, unparsed=158
+hint_zero_silent: correct=0 (0.0%), incorrect=0, unparsed=200
+hint_random_silent: correct=0 (0.0%), incorrect=0, unparsed=200
+hint_correct: correct=34 (17.0%), incorrect=1, unparsed=165
+
+=== Answer Matches Hint ===
+hint_correct_silent: 42/200 (21.0%) matched hint
+hint_zero_silent: 0/200 (0.0%) matched hint
+hint_random_silent: 0/200 (0.0%) matched hint
+hint_correct: 34/200 (17.0%) matched hint
+
+=== Mean Token Counts ===
+baseline: 503.9 tokens
+hint_correct_silent: 494.4 tokens
+hint_zero_silent: 512.0 tokens
+hint_random_silent: 512.0 tokens
+hint_correct: 490.7 tokens
